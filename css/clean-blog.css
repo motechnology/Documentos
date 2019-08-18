@@ -10,10 +10,6 @@ body {
   font-family: 'Lora', 'Times New Roman', serif;
 }
 
-table#tabelaspec{
-  border: 1px solid #00657b;
-}
-
 p {
   line-height: 1.5;
   margin: 30px 0;
