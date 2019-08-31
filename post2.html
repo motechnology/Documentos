@@ -76,6 +76,26 @@
 
           <h2 class="section-heading" style="font-size: 21px">1. Tensão e corrente de operação</h2>
           <h2 class="section-heading" style="font-size: 18px">1.1 Módulo de coleta de dados (Estação remota)</h2>
+           
+          <p>Esta partição do projeto será composta pelos seguintes componentes: Arduino uno, módulo de transmissão 
+            rádio/wifi modelo NRF24L01 e sensor de temperatura e umidade relativa do ar modelo DHT11. O sensor DHT11 
+            irá realizar a coleta de dados e por intermédio do microprocessador Arduino Uno, o módulo de rádio/wifi 
+            fará uma comunicação com a estação base onde também haverá um NRF24L01, e desta forma enviará os dados.
+          </p>
+          <p>A tabela 1 demonstra os valores recomendados pelo fabricante para o bom funcionamento dos dispositivos. 
+            Vale lembrar que o projeto será dependente de uma rede elétrica próxima às estações (remota e base) para 
+            a alimentação dos componentes, para isto, é necessário uma fonte externa que fará a alimentação correta 
+            do microcontrolador. Essa fonte deverá ser capaz de fornecer entre 5 - 12V e 0.5 - 1A para o funcionamento 
+            eficaz do componente. Uma outra observação é em relação a tensão da rede local, cabe ao usuário verificar 
+            se a fonte externa é compatível com a mesma, caso contrário será necessário o uso de transformador para a 
+            conversão de tensão adequada. A fonte externa utilizada no desenvolvimento do projeto também está especificada na
+            tabela 1.
+          </p>
+
+          <a href="#"> 
+              <img class="img-fluid" src="img/compTable1.jpg" alt="">
+           </a>
+
           <h2 class="section-heading" style="font-size: 18px">1.2 Módulo de recepção de dados (Estação base)</h2>
 
           <h2 class="section-heading" style="font-size: 21px">2. Frequências de operacão dos módulos NRF24L01 e ESP8266</h2>
