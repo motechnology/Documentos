@@ -98,14 +98,32 @@
 
           <h2 class="section-heading" style="font-size: 18px">1.2 Módulo de recepção de dados (Estação base)</h2>
 
+          <p>A estação de recepção dos dados coletados (estação base) terá em sua composição os seguintes componentes: 
+            Arduino Mega, módulo de recepção rádio/wifi NRF24L01 e módulo wifi ESP8266. Nesta etapa, o módulo NRF24L01 
+            receberá informações da estação remota e através do Arduino Mega serão processadas e organizadas, com isso, 
+            o módulo wifi terá a função de acessar esses dados já armazenados e enviá-los à nuvem onde ocorrerá todo o 
+            processo de manipulação e análise do conteúdo captado. Nesta etapa também será necessária uma rede elétrica 
+            local para a alimentação dos componentes. O usuário deve tomar as devidas precauções como já discutidas na 
+            seção 1.1. A tabela 2 demonstra as especificações dos componentes utilizados nesta parte do projeto.
+          </p>
+  
+            <a href="#"> 
+                <img class="img-fluid" src="img/compTable2.jpg" alt="">
+             </a>
+
           <h2 class="section-heading" style="font-size: 21px">2. Frequências de operacão dos módulos NRF24L01 e ESP8266</h2>
-          <h2 class="section-heading" style="font-size: 21px">3. Referências</h2>
           
-          <!--<a href="#"> -->
-           <!--<img class="img-fluid" src="img/post-sample-image.jpg" alt="">
-          </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span> --> 
-          <!--<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>-->
+          <p>
+          A comunicação entre os módulos NRF24L01 das diferentes estações ocorrerá na faixa de frequência de 2.4Ghz e de acordo 
+          com o datasheet [1] é possível alcançar uma taxa de transmissão de 2Mbps. Na etapa seguinte, o módulo ESP8266 enviará 
+          dos à rede wifi também na faixa de frequência 2.4Ghz [4], porém com taxa de transmissão próximo a 72Mbps.
+          </p>
+
+          <h2 class="section-heading" style="font-size: 21px">3. Referências</h2>
+
+          <a>[1] https://4donline.ihs.com/images/VipMasterIC/IC/NRSA/NRSAS00020/NRSAS00020-1.pdf?hkey=52A5661711E402568146F3353EA87419</a>
+          
+          
         </div>
       </div>
     </div>
