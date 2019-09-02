@@ -33,7 +33,7 @@ Tabela 2 - Especificações de componentes da estação base.
 
 ### 2. Frequências de operacão dos módulos NRF24L01 e ESP8266
 
-A comunicação entre os módulos NRF24L01 das diferentes estações ocorrerá na faixa de frequência de 2.4Ghz e de acordo com o *datasheet* [1] é possível alcançar uma taxa de transmissão de 2Mbps. Na etapa seguinte, o módulo ESP8266 enviará dados à rede *wifi* também na faixa de frequência 2.4Ghz [4], porém com taxa de transmissão próximo a 72Mbps.
+A comunicação entre os módulos NRF24L01 das diferentes estações ocorrerá na faixa de frequência de 2.4Ghz e de acordo com o *datasheet* [1] é possível alcançar uma taxa de transmissão de 2Mbps. Na etapa seguinte, o módulo ESP8266 enviará dados à rede *wifi* também na faixa de frequência 2.4Ghz [4], porém com taxa de transmissão próximo a 72Mbps. Desta forma, será necessário que o usuário tenha uma rede *wifi* que esteja acessível a estação base para o funcionamento do projeto.
 
 
 ### 3. Referências
