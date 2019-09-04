@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Termo de Abertura</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MO technology</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Postagens</a>
+          </li>
+          <!--Contato-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Módulo Web</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              <a href="#"></a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <h2 class="section-heading" style="font-size: 21px">Diagrama de funcionameto módulo servidor/web</h2>
+
+          <p>
+            O módulo servidor web é a parte do projeto em que todos os dados enviados pelo módulo receptor são armazenados 
+            em um banco de dados, enviados para um servidor web e exibidos em uma página web. O diagrama abaixo descreve todos 
+            os componentes deste módulo e como eles se integram entre si. 
+          </p>
+
+          <a href="#"> 
+                <img class="img-fluid" src="img/servidor.jpg" alt="">
+          </a>
+          
+          <p>Os dados serão encaminhados pelo módulo Wi-Fi do arduíno para uma máquina virtual (hospedada no google cloud) 
+             via protocolo de transporte  na camada de aplicação. O protocolo ainda será definido nas próximas etapas do projeto. 
+          </p>
+          <p>
+              Ao chegar na máquina virtual os dados serão tratados pelo back-end e encaminhados para o banco de dados. O framework 
+              a ser utilizado no back-end também será definido nas próximas etapas. O banco de dados fornecerá à página web os dados com 
+              as medições. O banco de dados utilizado é tipo noSQL e o software de banco de dados será o Mongo DB. 
+          </p>
+          <p>
+              A página web será acessada pelo usuário através de um proxy reverso. Na página web o usuário terá acesso aos dados de 
+              medição apresentados através de gráficos. A página web será implementada com o auxílio da ferramenta chartist. 
+          </p>
+          
+          
+        </div>
+      </div>
+    </div>
+  </article>
+  <hr>
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
