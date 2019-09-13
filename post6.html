@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Módulo Web</title>
+  <title>Protótipo</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Módulo Web</h1>
+            <h1>Protótipo não funcional da estacão base</h1>
             <h2 class="subheading"></h2>
             <span class="meta">
               <a href="#"></a>
@@ -74,30 +74,27 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 
-          <h2 class="section-heading" style="font-size: 21px">Diagrama de funcionameto módulo servidor/web</h2>
+          <h2 class="section-heading" style="font-size: 21px">Protótipo não funcional módulo de transmissão</h2>
 
           <p>
-            O módulo servidor web é a parte do projeto em que todos os dados enviados pelo módulo receptor são armazenados 
-            em um banco de dados, enviados para um servidor web e exibidos em uma página web. O diagrama abaixo descreve todos 
-            os componentes deste módulo e como eles se integram entre si. 
+            A figura abaixo demonstra o protótipo não funcional da estação remota onde estarão situados os seguintes 
+            componentes: Sensor de temperatura e umidade DHT11, módulo rádio/wifi NRF24L01 com antena externa e o 
+            microcontrolador Arduino Uno.
           </p>
 
           <a href="#"> 
-                <img class="img-fluid" src="img/servidor.jpg" alt="">
+                <img class="img-fluid" src="img/prot_base.jpg" alt="">
           </a>
           
-          <p>Os dados serão encaminhados pelo módulo Wi-Fi do arduíno para uma máquina virtual (hospedada no google cloud) 
-             via protocolo de transporte  na camada de aplicação. O protocolo ainda será definido nas próximas etapas do projeto. 
-          </p>
-          <p>
-              Ao chegar na máquina virtual os dados serão tratados pelo back-end e encaminhados para o banco de dados. O framework 
-              a ser utilizado no back-end também será definido nas próximas etapas. O banco de dados fornecerá à página web os dados com 
-              as medições. O banco de dados utilizado é tipo noSQL e o software de banco de dados será o Mongo DB. 
-          </p>
-          <p>
-              A página web será acessada pelo usuário através de um proxy reverso. Na página web o usuário terá acesso aos dados de 
-              medição apresentados através de gráficos. A página web será implementada com o auxílio da ferramenta chartist. 
-          </p>
+          <p>Os pinos de conexão referentes ao sensor ficaram na seguinte configuração: </p>
+
+          <a href="#"> 
+            <img class="img-fluid" src="img/table_sensor.jpg" alt="">
+          </a>
+
+          <a href="#"> 
+            <img class="img-fluid" src="img/table_radio1.jpg" alt="">
+         </a>
           
           
         </div>
