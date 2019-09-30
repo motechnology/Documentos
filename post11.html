@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Estabilidade</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MO technology</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Postagens</a>
+          </li>
+          <!--Contato-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Estabilidade na comunicação entre rádios NRF24L01</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              <a href="#"></a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <h2 class="section-heading" style="font-size: 21px">Estudo introdutório ao módulo RTC.</h2>
+
+          <p>
+                No decorrer do projeto foi constatado a necessidade da utilização de um temporizador para controle do tempo seja nas 
+                leituras ou envio de dados. Como solução decidimos implantar o módulo RTC para nos auxiliar nesta parte, pois implantar 
+                um relógio no arduino seria ineficiente, portanto o módulo RTC serviu como solução para este problema. O principal objetivo 
+                deste módulo, é capturar o horário da captura do dado para enviá-lo à estação base para se ter um maior controle do sistema 
+                monitorado.
+          </p> 
+
+          <p>
+                Para instalação do hardware foi conectado alimentação vcc de 5V e gnd, ambos cedidos pelo arduino, já os pinos SDA e SCL 
+                foram conectados nos pinos A4 e A5 respectivamente como mostra figura abaixo. O componente se situa na estação remota, ou 
+                seja, a estação que irá transmitir os dados coletados pelo sensor.
+           </p> 
+          
+          <a href="#"> 
+                <img class="center" src="img/rtc_images.jpg" alt="" >
+          </a>
+          
+          <p>
+                Para poder explorar sua principal função no projeto, será necessário a utilizar uma biblioteca específica desenvolvida para ele ainda não
+                que está disponível <a href="https://github.com/motechnology/Projeto-Integrador-II/blob/master/DS3231-1.0.0.zip"> aqui</a>, onde nela é possível 
+                captar o tempo já convertido para timestamp. Vale lembrar que a ainda não implementado nenhum código a respeito do módulo.
+          </p>
+
+          <a href="#"> 
+                <img class="center" src="img/rtc_table.jpg" alt="" >
+          </a>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </article>
+  <hr>
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
