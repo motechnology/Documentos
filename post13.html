@@ -90,17 +90,15 @@
 
           <h2 class="section-heading" style="font-size: 18px">Caso de leitura dos dados</h2>
 
-          <h2 class="section-heading" style="font-size: 17px">Entrada GET</h2>
-
           <p>
+                Entradas GET: <br />
                 O cliente HTTP poderá fazer a requisição do método de duas formas: <br />
                 1 - Sem solicitar um recurso em específico; <br />
                 2 - Solicitando um recurso específico, por exemplo, as leituras de um arduino único arduino. <br />
           </p>
-           
-          <h2 class="section-heading" style="font-size: 17px">Saídas</h2>
 
           <p>
+                Saídas: <br />
                 1 - 201 Ok no caso de sucesso; <br />
                 2 - 400 Bad Request em caso de inconsistências na URL. <br />
                 3 - 404 Not Found no caso de requisição de recursos inexistentes. <br />
@@ -109,16 +107,14 @@
 
           <h2 class="section-heading" style="font-size: 18px">Caso de escrita dos dados</h2>
           
-          <h2 class="section-heading" style="font-size: 17px"> Entrada: POST + JSON </h2>
-
           <p>
+                Entrada: POST + JSON. <br />
                 Formato do JSON: {id: “123”, u: “60”, t: “25”, tm: “123456789” }. Onde cada campo representa, respectivamente:
                 identificação do arduino, umidade, temperatura e timestamp.
           </p>
 
-          <h2 class="section-heading" style="font-size: 17px"> Saídas </h2>
-
           <p>
+                Saídas: <br />
                 1 - 200 Ok no caso de sucesso; <br />
                 2 - 201 Creat no caso de inserção de uma nova medida<br />
                 3 - 400 Bad Request em caso de inconsistências na URL;<br />
