@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>API</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MO technology</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Postagens</a>
+          </li>
+          <!--Contato-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Estudo sobre a API</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              <a href="#"></a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <h2 class="section-heading" style="font-size: 21px">Apresentação.</h2>
+
+          <p>
+             Documentação da API RESTful com Python Flask desenvolvida para aplicação web do projeto integrador da equipe MO Technology 
+             do curso superior de engenharia de telecomunicações.
+          </p> 
+
+          <h2 class="section-heading" style="font-size: 21px">Autenticação.</h2>
+          <p>
+            Será necessário fazer autenticação para fazer requisições a esse API. 
+          </p> 
+          
+          <h2 class="section-heading" style="font-size: 21px">Formato de entradas e saídas</h2>
+
+          <h2 class="section-heading" style="font-size: 18px">Caso de leitura dos dados</h2>
+
+          <h2 class="section-heading" style="font-size: 12px">Entrada GET</h2>
+
+          <p>
+                O cliente HTTP poderá fazer a requisição do método de duas formas: <br />
+                1 - Sem solicitar um recurso em específico; <br />
+                2 - Solicitando um recurso específico, por exemplo, as leituras de um arduino único arduino. <br />
+          </p>
+           
+          <h2 class="section-heading" style="font-size: 12px">Saídas</h2>
+
+          <p>
+                1 - 201 Ok no caso de sucesso; <br />
+                2 - 400 Bad Request em caso de inconsistências na URL. <br />
+                3 - 404 Not Found no caso de requisição de recursos inexistentes. <br />
+          </p>
+
+
+          <h2 class="section-heading" style="font-size: 18px">Caso de escrita dos dados</h2>
+          
+          <h2 class="section-heading" style="font-size: 12px"> Entrada: POST + JSON </h2>
+
+          <p>
+                Formato do JSON: {id: “123”, u: “60”, t: “25”, tm: “123456789” }. Onde cada campo representa, respectivamente:
+                identificação do arduino, umidade, temperatura e timestamp.
+          </p>
+
+          <h2 class="section-heading" style="font-size: 12px"> Saídas </h2>
+
+          <p>
+                1 - 200 Ok no caso de sucesso; <br />
+                2 - 201 Creat no caso de inserção de uma nova medida<br />
+                3 - 400 Bad Request em caso de inconsistências na URL;<br />
+                4 - 401 Unathorized caso um o arduino que encaminhou as medidas para o módulo transmissor não esteja previamente cadastrado no banco de dados; <br />
+          </p>
+          
+          <h2 class="section-heading" style="font-size: 21px">Métodos de solicitação HTTP.</h2>
+
+          <a href="#"> 
+                <img class="center" src="img/api_table_1.jpg" alt="" >
+          </a>
+          
+          <h2 class="section-heading" style="font-size: 21px">Como serão usados os métodos HTTP utilizados pelos usuários do sistema:</h2>
+
+          <a href="#"> 
+                <img class="center" src="img/api_table_2.jpg" alt="" >
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </article>
+  <hr>
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
