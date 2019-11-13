@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Coletor: Referência do Arquivo coletor.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Coletor
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo coletor.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;Wire.h&gt;</code><br />
+<code>#include &lt;RTClib.h&gt;</code><br />
+<code>#include &lt;dht.h&gt;</code><br />
+<code>#include &lt;nRF24L01.h&gt;</code><br />
+<code>#include &lt;RF24.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a9da09a9de0f5c3a2bf74dda6047df7b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a9da09a9de0f5c3a2bf74dda6047df7b8">led1</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:a9da09a9de0f5c3a2bf74dda6047df7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">led de inicialização se estiver tudo ok!!!!  <a href="coletor_8cpp.html#a9da09a9de0f5c3a2bf74dda6047df7b8">Mais...</a><br /></td></tr>
+<tr class="separator:a9da09a9de0f5c3a2bf74dda6047df7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c3855ae7d652a267115f013350425e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a26c3855ae7d652a267115f013350425e">led2</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:a26c3855ae7d652a267115f013350425e"><td class="mdescLeft">&#160;</td><td class="mdescRight">led de aguardo de inicialização!!!!  <a href="coletor_8cpp.html#a26c3855ae7d652a267115f013350425e">Mais...</a><br /></td></tr>
+<tr class="separator:a26c3855ae7d652a267115f013350425e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79111e78831efb8ac76fa8123357475e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a79111e78831efb8ac76fa8123357475e">DHT11_PIN</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a79111e78831efb8ac76fa8123357475e"><td class="mdescLeft">&#160;</td><td class="mdescRight">definindo pinos para leitura de dados (uidade e temperatura)  <a href="coletor_8cpp.html#a79111e78831efb8ac76fa8123357475e">Mais...</a><br /></td></tr>
+<tr class="separator:a79111e78831efb8ac76fa8123357475e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc5438d7da45fe939a6b00cb23365a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a6dc5438d7da45fe939a6b00cb23365a3">id</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a6dc5438d7da45fe939a6b00cb23365a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">definindo id do modulo transmissor  <a href="coletor_8cpp.html#a6dc5438d7da45fe939a6b00cb23365a3">Mais...</a><br /></td></tr>
+<tr class="separator:a6dc5438d7da45fe939a6b00cb23365a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a53cdd46f95419ffdcd44d3f0d6147b54"><td class="memItemLeft" align="right" valign="top">RF24&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a53cdd46f95419ffdcd44d3f0d6147b54">radio</a> (9, 10)</td></tr>
+<tr class="memdesc:a53cdd46f95419ffdcd44d3f0d6147b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">definindo portas CE porta 9 e CSN porta 10 <br  />
+  <a href="coletor_8cpp.html#a53cdd46f95419ffdcd44d3f0d6147b54">Mais...</a><br /></td></tr>
+<tr class="separator:a53cdd46f95419ffdcd44d3f0d6147b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e75944b2caaef86348b689ce641ed72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a0e75944b2caaef86348b689ce641ed72">piscaLed</a> ()</td></tr>
+<tr class="memdesc:a0e75944b2caaef86348b689ce641ed72"><td class="mdescLeft">&#160;</td><td class="mdescRight">função que fica piscando o led de funcionamento ok  <a href="coletor_8cpp.html#a0e75944b2caaef86348b689ce641ed72">Mais...</a><br /></td></tr>
+<tr class="separator:a0e75944b2caaef86348b689ce641ed72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc82219690f89c2c9591fd8c2b1f5948"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#afc82219690f89c2c9591fd8c2b1f5948">preparaStringEnvio</a> ()</td></tr>
+<tr class="memdesc:afc82219690f89c2c9591fd8c2b1f5948"><td class="mdescLeft">&#160;</td><td class="mdescRight">função que prepara a string a ser enviada  <a href="coletor_8cpp.html#afc82219690f89c2c9591fd8c2b1f5948">Mais...</a><br /></td></tr>
+<tr class="separator:afc82219690f89c2c9591fd8c2b1f5948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb08e826d50b2c50512977b878afcfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#aefb08e826d50b2c50512977b878afcfd">enviaDados</a> ()</td></tr>
+<tr class="memdesc:aefb08e826d50b2c50512977b878afcfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmitindo os dados.  <a href="coletor_8cpp.html#aefb08e826d50b2c50512977b878afcfd">Mais...</a><br /></td></tr>
+<tr class="separator:aefb08e826d50b2c50512977b878afcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a724d7cd9aa41ada1b97def3a3c73d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#ad4a724d7cd9aa41ada1b97def3a3c73d">verificaEnvioDado</a> (int hr, int minuts)</td></tr>
+<tr class="separator:ad4a724d7cd9aa41ada1b97def3a3c73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca92251d2a0c93c3ca57e75c8fd5e3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#aaca92251d2a0c93c3ca57e75c8fd5e3c">setTimer</a> ()</td></tr>
+<tr class="separator:aaca92251d2a0c93c3ca57e75c8fd5e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:afcf1921216ff5917b78da3e653d334a7"><td class="memItemLeft" align="right" valign="top">const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#afcf1921216ff5917b78da3e653d334a7">pipe1</a> = 0xE14BC8F482LL</td></tr>
+<tr class="memdesc:afcf1921216ff5917b78da3e653d334a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">endereço de comunicação para abertura de pipe  <a href="coletor_8cpp.html#afcf1921216ff5917b78da3e653d334a7">Mais...</a><br /></td></tr>
+<tr class="separator:afcf1921216ff5917b78da3e653d334a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b3fce5c3db34dc199e88ef05fc8c8d"><td class="memItemLeft" align="right" valign="top">dht&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a60b3fce5c3db34dc199e88ef05fc8c8d">DHT</a></td></tr>
+<tr class="memdesc:a60b3fce5c3db34dc199e88ef05fc8c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">objeto DHT sendo criado para extração das variáveis  <a href="coletor_8cpp.html#a60b3fce5c3db34dc199e88ef05fc8c8d">Mais...</a><br /></td></tr>
+<tr class="separator:a60b3fce5c3db34dc199e88ef05fc8c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7715afc6e8732f6f936183f5c0d76167"><td class="memItemLeft" align="right" valign="top">RTC_DS1307&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a7715afc6e8732f6f936183f5c0d76167">rtc</a></td></tr>
+<tr class="memdesc:a7715afc6e8732f6f936183f5c0d76167"><td class="mdescLeft">&#160;</td><td class="mdescRight">objeto rtc sendo criado para extração da hora  <a href="coletor_8cpp.html#a7715afc6e8732f6f936183f5c0d76167">Mais...</a><br /></td></tr>
+<tr class="separator:a7715afc6e8732f6f936183f5c0d76167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1511c5f7cba1725f518be606d5ab4284"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a1511c5f7cba1725f518be606d5ab4284">enviar</a> = &quot;&quot;</td></tr>
+<tr class="separator:a1511c5f7cba1725f518be606d5ab4284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f453dcf89e31488f854d471ec98bc3d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="coletor_8cpp.html#a9f453dcf89e31488f854d471ec98bc3d">buf1</a> [32]</td></tr>
+<tr class="separator:a9f453dcf89e31488f854d471ec98bc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a id="a79111e78831efb8ac76fa8123357475e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79111e78831efb8ac76fa8123357475e">&#9670;&nbsp;</a></span>DHT11_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DHT11_PIN&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>definindo pinos para leitura de dados (uidade e temperatura) </p>
+
+</div>
+</div>
+<a id="a6dc5438d7da45fe939a6b00cb23365a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc5438d7da45fe939a6b00cb23365a3">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define id&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>definindo id do modulo transmissor </p>
+
+</div>
+</div>
+<a id="a9da09a9de0f5c3a2bf74dda6047df7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da09a9de0f5c3a2bf74dda6047df7b8">&#9670;&nbsp;</a></span>led1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define led1&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>led de inicialização se estiver tudo ok!!!! </p>
+
+</div>
+</div>
+<a id="a26c3855ae7d652a267115f013350425e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c3855ae7d652a267115f013350425e">&#9670;&nbsp;</a></span>led2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define led2&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>led de aguardo de inicialização!!!! </p>
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="aefb08e826d50b2c50512977b878afcfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb08e826d50b2c50512977b878afcfd">&#9670;&nbsp;</a></span>enviaDados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void enviaDados </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transmitindo os dados. </p>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e75944b2caaef86348b689ce641ed72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e75944b2caaef86348b689ce641ed72">&#9670;&nbsp;</a></span>piscaLed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void piscaLed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>função que fica piscando o led de funcionamento ok </p>
+
+</div>
+</div>
+<a id="afc82219690f89c2c9591fd8c2b1f5948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc82219690f89c2c9591fd8c2b1f5948">&#9670;&nbsp;</a></span>preparaStringEnvio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void preparaStringEnvio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>função que prepara a string a ser enviada </p>
+
+</div>
+</div>
+<a id="a53cdd46f95419ffdcd44d3f0d6147b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53cdd46f95419ffdcd44d3f0d6147b54">&#9670;&nbsp;</a></span>radio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RF24 radio </td>
+          <td>(</td>
+          <td class="paramtype">9&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">10&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>definindo portas CE porta 9 e CSN porta 10 <br  />
+ </p>
+
+</div>
+</div>
+<a id="aaca92251d2a0c93c3ca57e75c8fd5e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaca92251d2a0c93c3ca57e75c8fd5e3c">&#9670;&nbsp;</a></span>setTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ajustando dia e hora (ano, mes, dia, hora, minutos, segundos); rtc.adjust(DateTime(19, 01, 07, 01, 03, 0));</p>
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>acendendo led para verificação visual de inicialização</p>
+<p>iniciando comunicação radio</p>
+<p>configurando endereço para comunicação pipe <br  />
+</p>
+<p>bloqueando estado de leitura no módulo de rádio</p>
+<p>Define a taxa de transmissão</p>
+<p>apagando led de verificação</p>
+
+</div>
+</div>
+<a id="ad4a724d7cd9aa41ada1b97def3a3c73d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a724d7cd9aa41ada1b97def3a3c73d">&#9670;&nbsp;</a></span>verificaEnvioDado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean verificaEnvioDado </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minuts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>função que verifica se variável pode ser enviada retorna true se sim e false se não </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a id="a9f453dcf89e31488f854d471ec98bc3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f453dcf89e31488f854d471ec98bc3d">&#9670;&nbsp;</a></span>buf1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char buf1[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60b3fce5c3db34dc199e88ef05fc8c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b3fce5c3db34dc199e88ef05fc8c8d">&#9670;&nbsp;</a></span>DHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">dht DHT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>objeto DHT sendo criado para extração das variáveis </p>
+
+</div>
+</div>
+<a id="a1511c5f7cba1725f518be606d5ab4284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1511c5f7cba1725f518be606d5ab4284">&#9670;&nbsp;</a></span>enviar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String enviar = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcf1921216ff5917b78da3e653d334a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf1921216ff5917b78da3e653d334a7">&#9670;&nbsp;</a></span>pipe1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t pipe1 = 0xE14BC8F482LL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>endereço de comunicação para abertura de pipe </p>
+
+</div>
+</div>
+<a id="a7715afc6e8732f6f936183f5c0d76167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7715afc6e8732f6f936183f5c0d76167">&#9670;&nbsp;</a></span>rtc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RTC_DS1307 rtc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>objeto rtc sendo criado para extração da hora </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>
