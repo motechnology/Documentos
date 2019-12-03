@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Emissor: Referência do Arquivo emissor.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Emissor
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo emissor.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;SPI.h&gt;</code><br />
+<code>#include &lt;nRF24L01.h&gt;</code><br />
+<code>#include &lt;RF24.h&gt;</code><br />
+<code>#include &lt;ESP8266WiFi.h&gt;</code><br />
+<code>#include &lt;ESP8266HTTPClient.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a502e7969ad571f382c56752b6b322ee5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#a502e7969ad571f382c56752b6b322ee5">senha</a>&#160;&#160;&#160;&quot;xx&quot;</td></tr>
+<tr class="separator:a502e7969ad571f382c56752b6b322ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a67803a48eebdab71cd715ea75cea96c8"><td class="memItemLeft" align="right" valign="top">RF24&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#a67803a48eebdab71cd715ea75cea96c8">radio</a> (D4, D8)</td></tr>
+<tr class="memdesc:a67803a48eebdab71cd715ea75cea96c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">definindo portas CE e CSN  <a href="emissor_8cpp.html#a67803a48eebdab71cd715ea75cea96c8">Mais...</a><br /></td></tr>
+<tr class="separator:a67803a48eebdab71cd715ea75cea96c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e8576b10256c1b64553a64161fdb1d"><td class="memItemLeft" align="right" valign="top">WiFiServer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#ac3e8576b10256c1b64553a64161fdb1d">server</a> (80)</td></tr>
+<tr class="separator:ac3e8576b10256c1b64553a64161fdb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c1ac0ea335fb06ef2cbe5088299712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#a27c1ac0ea335fb06ef2cbe5088299712">tratamentoRecebido</a> ()</td></tr>
+<tr class="separator:a27c1ac0ea335fb06ef2cbe5088299712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0676c792953e15aa816f89ae0fb622d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#a0676c792953e15aa816f89ae0fb622d1">enviandoServidor</a> ()</td></tr>
+<tr class="separator:a0676c792953e15aa816f89ae0fb622d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a587ba0cb07f02913598610049a3bbb79"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#a587ba0cb07f02913598610049a3bbb79">ssid</a> = &quot;Osneto&quot;</td></tr>
+<tr class="memdesc:a587ba0cb07f02913598610049a3bbb79"><td class="mdescLeft">&#160;</td><td class="mdescRight">VARIÁVEL QUE ARMAZENA O NOME DA REDE SEM FIO EM QUE VAI CONECTAR.  <a href="emissor_8cpp.html#a587ba0cb07f02913598610049a3bbb79">Mais...</a><br /></td></tr>
+<tr class="separator:a587ba0cb07f02913598610049a3bbb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a2ebcb494493f648ae1e6975672575"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#aa4a2ebcb494493f648ae1e6975672575">password</a> = &quot;osvaldo1983&quot;</td></tr>
+<tr class="memdesc:aa4a2ebcb494493f648ae1e6975672575"><td class="mdescLeft">&#160;</td><td class="mdescRight">VARIÁVEL QUE ARMAZENA A SENHA DA REDE SEM FIO EM QUE VAI CONECTAR.  <a href="emissor_8cpp.html#aa4a2ebcb494493f648ae1e6975672575">Mais...</a><br /></td></tr>
+<tr class="separator:aa4a2ebcb494493f648ae1e6975672575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec657bef26e5ff27b9442563a591d9ec"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#aec657bef26e5ff27b9442563a591d9ec">url</a> = &quot;http://104.154.254.106/medicoes&quot;</td></tr>
+<tr class="separator:aec657bef26e5ff27b9442563a591d9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf1921216ff5917b78da3e653d334a7"><td class="memItemLeft" align="right" valign="top">const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#afcf1921216ff5917b78da3e653d334a7">pipe1</a> = 0xE14BC8F482LL</td></tr>
+<tr class="memdesc:afcf1921216ff5917b78da3e653d334a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">endereço de comunicação para abertura de pipe  <a href="emissor_8cpp.html#afcf1921216ff5917b78da3e653d334a7">Mais...</a><br /></td></tr>
+<tr class="separator:afcf1921216ff5917b78da3e653d334a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa813f39f9fdf84d50794d31ff6d55c54"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#aa813f39f9fdf84d50794d31ff6d55c54">recebidos</a> [32]</td></tr>
+<tr class="memdesc:aa813f39f9fdf84d50794d31ff6d55c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">variável que receberá a mensagem a enviar  <a href="emissor_8cpp.html#aa813f39f9fdf84d50794d31ff6d55c54">Mais...</a><br /></td></tr>
+<tr class="separator:aa813f39f9fdf84d50794d31ff6d55c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca0a792af3f3dad88076258b6e13db2"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#a9ca0a792af3f3dad88076258b6e13db2">enviarServidor</a> = &quot;&quot;</td></tr>
+<tr class="separator:a9ca0a792af3f3dad88076258b6e13db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb559820d9ca11295b4500f179ef6392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="emissor_8cpp.html#acb559820d9ca11295b4500f179ef6392">i</a> =0</td></tr>
+<tr class="separator:acb559820d9ca11295b4500f179ef6392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a id="a502e7969ad571f382c56752b6b322ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502e7969ad571f382c56752b6b322ee5">&#9670;&nbsp;</a></span>senha</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define senha&#160;&#160;&#160;&quot;xx&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="a0676c792953e15aa816f89ae0fb622d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0676c792953e15aa816f89ae0fb622d1">&#9670;&nbsp;</a></span>enviandoServidor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void enviandoServidor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>lendo informações contidas no pipe1 e armazenando em recebidos</p>
+
+</div>
+</div>
+<a id="a67803a48eebdab71cd715ea75cea96c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67803a48eebdab71cd715ea75cea96c8">&#9670;&nbsp;</a></span>radio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RF24 radio </td>
+          <td>(</td>
+          <td class="paramtype">D4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D8&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>definindo portas CE e CSN </p>
+
+</div>
+</div>
+<a id="ac3e8576b10256c1b64553a64161fdb1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e8576b10256c1b64553a64161fdb1d">&#9670;&nbsp;</a></span>server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WiFiServer server </td>
+          <td>(</td>
+          <td class="paramtype">80&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inicializa a comunicaçao entre os módulos</p>
+<p>Entra em modo de recepcao</p>
+<p>Entra em modo de recepcao</p>
+<p>Define a taxa de transmissão</p>
+<p>acender led verde</p>
+<p>ESCREVE O TEXTO NA SERIAL</p>
+<p>ESCREVE NA SERIAL O IP RECEBIDO DENTRO DA REDE SEM FIO (O IP NESSA PRÁTICA É RECEBIDO DE FORMA AUTOMÁTICA)</p>
+
+</div>
+</div>
+<a id="a27c1ac0ea335fb06ef2cbe5088299712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c1ac0ea335fb06ef2cbe5088299712">&#9670;&nbsp;</a></span>tratamentoRecebido()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tratamentoRecebido </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a id="a9ca0a792af3f3dad88076258b6e13db2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca0a792af3f3dad88076258b6e13db2">&#9670;&nbsp;</a></span>enviarServidor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String enviarServidor = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb559820d9ca11295b4500f179ef6392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb559820d9ca11295b4500f179ef6392">&#9670;&nbsp;</a></span>i</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int i =0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4a2ebcb494493f648ae1e6975672575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a2ebcb494493f648ae1e6975672575">&#9670;&nbsp;</a></span>password</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* password = &quot;osvaldo1983&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>VARIÁVEL QUE ARMAZENA A SENHA DA REDE SEM FIO EM QUE VAI CONECTAR. </p>
+
+</div>
+</div>
+<a id="afcf1921216ff5917b78da3e653d334a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf1921216ff5917b78da3e653d334a7">&#9670;&nbsp;</a></span>pipe1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t pipe1 = 0xE14BC8F482LL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>endereço de comunicação para abertura de pipe </p>
+
+</div>
+</div>
+<a id="aa813f39f9fdf84d50794d31ff6d55c54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa813f39f9fdf84d50794d31ff6d55c54">&#9670;&nbsp;</a></span>recebidos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char recebidos[32]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>variável que receberá a mensagem a enviar </p>
+
+</div>
+</div>
+<a id="a587ba0cb07f02913598610049a3bbb79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587ba0cb07f02913598610049a3bbb79">&#9670;&nbsp;</a></span>ssid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* ssid = &quot;Osneto&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>VARIÁVEL QUE ARMAZENA O NOME DA REDE SEM FIO EM QUE VAI CONECTAR. </p>
+
+</div>
+</div>
+<a id="aec657bef26e5ff27b9442563a591d9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec657bef26e5ff27b9442563a591d9ec">&#9670;&nbsp;</a></span>url</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* url = &quot;http://104.154.254.106/medicoes&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>
